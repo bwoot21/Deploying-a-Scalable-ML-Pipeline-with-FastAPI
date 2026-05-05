@@ -75,12 +75,14 @@ def save_model(model, path):
     path : str
         Path to save pickle file.
     """
+    # Used this website as a reference to learn how to do this: https://docs.python.org/3/library/pickle.html
     with open(path, "wb") as f:
         pickle.dump(model, f)
 
 # Create load_model function.
 def load_model(path):
     """ Loads pickle file from `path` and returns it."""
+    # Used this website as a reference to learn how to do this: https://docs.python.org/3/library/pickle.html
     with open(path, "rb") as f:
         loading = pickle.load(f)
     return loading
