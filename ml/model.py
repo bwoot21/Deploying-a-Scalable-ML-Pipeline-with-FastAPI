@@ -79,11 +79,9 @@ def save_model(model, path):
 
 def load_model(path):
     """ Loads pickle file from `path` and returns it."""
-    # TODO: implement the function
     with open(path, "rb") as f:
         loading = pickle.load(f)
     return loading
-    pass
 
 
 def performance_on_categorical_slice(
@@ -124,8 +122,6 @@ def performance_on_categorical_slice(
     """
     # TODO: implement the function
     X_slice, y_slice, _, _ = process_data(
-        ,
-        Training = False
         # your code here
         # for input data, use data in column given as "column_name", with the slice_value 
         # use training = False
