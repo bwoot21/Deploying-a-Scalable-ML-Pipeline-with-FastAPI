@@ -1,7 +1,6 @@
 import pickle
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from ml.data import process_data
-import mlflow
 from sklearn.ensemble import RandomForestClassifier
 # TODO: add necessary import
 
@@ -125,7 +124,7 @@ def performance_on_categorical_slice(
     """
     # Implement the function
     X_slice, y_slice, _, _ = process_data(
-            data = data[data[column_name] == slice_value],
+            X = data[data[column_name] == slice_value],
             categorical_features = categorical_features,
             label = label,
             encoder = encoder,
