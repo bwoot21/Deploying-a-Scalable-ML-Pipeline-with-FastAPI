@@ -1,5 +1,5 @@
 import pytest
-from sklearn.ensemble import RandomForestClassification
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import make_classification
 from ml.model import train_model
 # TODO: add necessary import
