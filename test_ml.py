@@ -1,6 +1,7 @@
 import pytest
 from sklearn.ensemble import RandomForestClassification
 from sklearn.datasets import make_classification
+from ml.model import train_model
 # TODO: add necessary import
 
 # Test the training model function.
@@ -17,7 +18,7 @@ def test_two():
     # add description for the second test
     """
     # Your code here
-    
+
     pass
 
 
