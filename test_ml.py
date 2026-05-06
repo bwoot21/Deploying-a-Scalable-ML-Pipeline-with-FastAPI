@@ -3,9 +3,8 @@ from sklearn.datasets import make_classification
 from ml.model import(train_model, inference)
 from ml.data import apply_label
 
-# Used this website from Udactiy mentor as a reference to learn how to do the 3 tests: https://medium.com/@ydmarinb/simplifying-unit-testing-in-machine-learning-with-python-df9b9c1a3300
+# Used this website from Udactiy mentor as a reference to learn how to do the 2 of the tests: https://medium.com/@ydmarinb/simplifying-unit-testing-in-machine-learning-with-python-df9b9c1a3300
 # Test the training model function.
-# Also used https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.predict for proper exporting syntax.
 def test_training_model():
     """
     Create sample dataset with make_classification
@@ -29,7 +28,7 @@ def test_inference():
     return_inference = inference(return_model,X)
     assert set(return_inference) <= {0,1}, "The results should only be binary"
 
-# TODO: Test the apply label function
+# Test the apply label function
 def test_apply_label():
     """
     Run function on two lists, each with 0 and 1
