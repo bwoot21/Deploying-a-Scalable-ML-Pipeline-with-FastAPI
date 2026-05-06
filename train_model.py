@@ -18,7 +18,7 @@ data_path = os.path.join(project_path, "data", "census.csv")
 print(data_path)
 data = pd.read_csv(data_path)
 
-# Optional enhancement, use K-fold cross validation instead of a train-test split.
+# Use train-test split.
 train, test = train_test_split(data, random_state = 42)
 
 # DO NOT MODIFY
