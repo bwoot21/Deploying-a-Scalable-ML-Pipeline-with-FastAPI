@@ -1,7 +1,8 @@
 import pytest
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import make_classification
-from ml.model import train_model
+from ml.model import(train_model, inference)
+
 # TODO: add necessary import
 
 # Used this website as a reference to learn how to do the 3 tests: https://medium.com/@ydmarinb/simplifying-unit-testing-in-machine-learning-with-python-df9b9c1a3300
